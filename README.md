@@ -42,7 +42,7 @@ Installation simply requires fetching the source code. Following are required:
 
 - Git
 
-To fetch source code, change in to directory of your choice and run:
+To fetch source code, change in to the directory of your choice and run:
 
 ```sh
 git clone -b main \
