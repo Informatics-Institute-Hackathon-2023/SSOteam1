@@ -28,7 +28,11 @@ Sepsis can affect anyone, from infants to the elderly, and it doesn't discrimina
 One of the primary reasons sepsis is so deadly is its rapid progression. It can develop within hours, catching both patients and healthcare professionals off guard. Without timely intervention, sepsis can lead to multiple organ failure and death. However, when identified and treated promptly, the chances of survival increase significantly. This is why recognizing the indicators of sepsis is of paramount importance.
 
 ## Data
-Prediction of Sepsis data set from Kaggle: https://www.kaggle.com/datasets/salikhussaini49/prediction-of-sepsis?resource=download
+"Prediction of Sepsis" dataset from Kaggle: https://www.kaggle.com/datasets/salikhussaini49/prediction-of-sepsis?resource=download
+
+The dataset was obtained from two geographically distinct U.S. hospital systems: Beth Israel Deaconess Medical Center (hospital system A), Emory University Hospital (hospital system B). It consisted of a combination of hourly vital sign summaries, lab values, and static patient descriptions. In particular, the data contained 40 clinical variables: 8 vital sign variables, 26 laboratory variables, and 6 demographic variables. Altogether, these data included over 1.5 million hourly time windows.
+
+Data extracted from the Electronic Medical Record (EMR) underwent a series of preprocessing steps prior to formal analysis and model development. All patient features were condensed into hourly bins simplifying model development and testing, e.g., multiple heart rate measurements in an hourly time window were summarized as the median heart rate measurement. Multiple Logical Observation Identifiers Names and Codes (LOINC) codes describing the same clinical parameter were condensed into a single variable, e.g., serum hemoglobin and arterial hemoglobin became hemoglobin. 
 
 ## Usage
 
@@ -106,7 +110,7 @@ output_directory/
 **Note**: The is an example note with a [link](https://github.com/u-brite/team-repo-template).
 
 ## Methods
-
+The dataset was downloaded as .csv file and loaded into Google Colab. The dataset contains 1,552,210 rows with 40 variables from 40,339 patients. 
 ## Results
 
 ## Team Members
@@ -116,4 +120,4 @@ output_directory/
 |Phuong Quach               | phuong@uab.edu                   | Team Member |
 |Van Huynh                  | vanhuynh@uab.edu                 | Team Member |
 |Ana Chang                  | achang@pnwu.edu                  | Team Member |
-|Yishu Qu                   | yishuqu2024@u.northwestern.edu   | Team Member |
+|Yishu Qu                   | yishuqu2024@u.northwestern.edu   | Team Leader |
