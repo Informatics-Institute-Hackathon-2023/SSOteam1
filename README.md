@@ -3,7 +3,7 @@
 ## Table of Contents
 - [SSOteam](#SSOteam)
     - [Background](#Background)
-        - [Sepsis: A silent killer](#Sepsis) 
+        - [Sepsis: A silent killer](#sepsis:-A-silent-killer) 
     - [Data](#data)
     - [Usage](#usage)
         - [Installation](#installation)
