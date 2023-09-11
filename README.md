@@ -3,29 +3,17 @@
 ## Table of Contents
 - [SSOteam](#SSOteam)
     - [Background](#Background)
-        - [Sepsis: A silent killer](#sepsis-A-silent-killer) 
     - [Data](#data)
-    - [Usage](#usage)
-        - [Installation](#installation)
-        - [Requirements](#requirements) _Can be named Dependencies as well_
-        - [Activate conda environment](#activate-conda-environment) _Optional_
-        - [Steps to run ](#steps-to-run) _Optional depending on project_
-            - [Step-1](#step-1)
-            - [Step-2](#step-2)
     - [Methods](#methods)
     - [Results](#results) _Optional depending on project_
+    - [References] (#References)
     - [Team Members](#team-members)
 
 ## Background
-
-**Sepsis: A silent killer**
-Sepsis is a life-threatening medical condition that demands immediate attention and action. It occurs when the body's immune response to an infection goes haywire, triggering a cascade of events that can lead to organ failure and death. Understanding the importance of early detection and recognizing its indicators is critical in the battle against this deadly condition.
-
-**The Sepsis Menace: Why Detection Matters**
-Sepsis can affect anyone, from infants to the elderly, and it doesn't discriminate based on gender, race, or socioeconomic status. It is a leading cause of morbidity and mortality worldwide, responsible for millions of deaths each year. According to the World Health Organization (WHO), sepsis accounts for up to 30 million cases globally, with over 6 million deaths annually. One of the primary reasons sepsis is so deadly is its rapid progression. It can develop within hours, catching both patients and healthcare professionals off guard. Without timely intervention, sepsis can lead to multiple organ failure and death. However, when identified and treated promptly, the chances of survival increase significantly. This is why recognizing the indicators of sepsis for early detection is of paramount importance.
+Sepsis is a life-threatening medical condition that requires immediate attention and action. It is a leading cause of morbidity and mortality worldwide. According to the World Health Organization (WHO), sepsis accounts for 31 million cases globally, contributing to 5.3 million deaths worldwide per year. Sepsis is characterized by dysregulated immune response to infection, which triggers a cascade of events that can lead to organ failure and death. Although our understanding of the pathophysiology has made progress during the last decades, specific and sucessful interventions are still lacking. Fluid resusciation and early administration of broad-spectrum antibiotics are the only interventions that may reduce mortality. Without timely intervention, sepsis can lead to multiple organ failure and death. Therefore, recognizing the indicators of sepsis for early detection is of paramount importance.
 
 **Project description**
-Here, we used a publicly available dataset from patients admitted to hospitals who did or did not develop sepstic shock and utilize the physiological variables collected within 6-12 hours before sepsis onset for unsupervised and supervised clustering to identify early predictors of septic risk. 
+Here, we used a publicly available dataset from patients admitted to hospitals who did or did not develop sepstic shock and utilize the physiological variables  for machine learning to identify early signs of septic, contributing to effort for the early detection of this deadly condition.
 
 ## Data
 "Prediction of Sepsis" dataset from Kaggle: https://www.kaggle.com/datasets/salikhussaini49/prediction-of-sepsis?resource=download
