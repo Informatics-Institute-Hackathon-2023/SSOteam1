@@ -34,85 +34,15 @@ The dataset was obtained from two geographically distinct U.S. hospital systems:
 
 Data extracted from the Electronic Medical Record (EMR) underwent a series of preprocessing steps prior to formal analysis and model development. All patient features were condensed into hourly bins simplifying model development and testing, e.g., multiple heart rate measurements in an hourly time window were summarized as the median heart rate measurement. Multiple Logical Observation Identifiers Names and Codes (LOINC) codes describing the same clinical parameter were condensed into a single variable, e.g., serum hemoglobin and arterial hemoglobin became hemoglobin. 
 
-## Usage
-
-:exclamation: _How will someone not involved in your project be able to run the code or use it._ :exclamation:
-
-### Installation
-
-:exclamation: _If installation is required, please mention how to do so here._ :exclamation:
-
-Installation simply requires fetching the source code. Following are required:
-
-- Git
-
-To fetch source code, change in to the directory of your choice and run:
-
-```sh
-git clone -b main \
-    git@github.com:u-brite/team-repo-template.git
-```
-
-### Requirements
-:exclamation: _Note any software used (including Python or R packages), operating system requirements, etc. and its version so that your project is reproducible. It does not have to be in the below format_ :exclamation:
-
-*OS:*
-
-Currently works only in Linux OS. Docker versions may need to be explored later to make it useable in Mac (and
-potentially Windows).
-
-*Tools:*
-
-- Anaconda3
-    - Tested with version: 2020.02
-
-### Activate conda environment
-:exclamation: _Optional: Depends on project._ :exclamation:
-
-Change in to root directory and run the commands below:
-
-```sh
-# create conda environment. Needed only the first time.
-conda env create --file configs/environment.yaml
-
-# if you need to update existing environment
-conda env update --file configs/environment.yaml
-
-# activate conda environment
-conda activate testing
-```
-
-### Steps to run
-:exclamation: _Optional: Depends on project._ :exclamation:
-
-#### Step 1
-
-```sh
-python src/data_prep.py -i path/to/file.tsv -O path/to/output_directory
-```
-
-#### Step 2
-
-```sh
-python src/model.py -i path/to/parsed_file.tsv -O path/to/output_directory
-```
-
-Output from this step includes -
-
-```directory
-output_directory/
-├── parsed_file.tsv               <--- used for model
-├── plot.pdf- Plot to visualize data
-└── columns.csv - columns before and after filtering step
-
-```
-
-**Note**: The is an example note with a [link](https://github.com/u-brite/team-repo-template).
-
 ## Methods
-The dataset was downloaded as .csv file and loaded into Google Colab. The dataset contains 1,552,210 rows with 40 variables from 40,339 patients with 2,932 developed sepsis and 37,404 did not. Among septic patients, 426 had sepsis before ICU admission and therefore were excluded from the analysis. Exploratory data analysis shows missing values in a number of variables, and therefore value imputation was implemented (bfill and ffill) to fill the missing data. The cleaned data was then used for k-means unsupervised clustering algorithm (KMeans from sklearn.cluster) and visualized using principal component analysis (PCA).     
+The dataset was downloaded as .csv file and loaded into Google Colab, which contains 1,552,210 rows with 40 variables from 40,339 patients, in which 2,932 developed sepsis and 37,404 did not. Among septic patients, 426 had sepsis before ICU admission and therefore were excluded from the analysis. Exploratory data analysis shows missing values in a number of variables, and therefore value imputation was implemented (bfill and ffill) to fill the missing data. The cleaned data was then used for k-means unsupervised clustering algorithm (KMeans from sklearn.cluster) and visualized using principal component analysis (PCA from sklearn.decomposition).     
 
 ## Results
+
+
+## References
+1. Deng HF, Sun MW, Wang Y, Zeng J, Yuan T, Li T, Li DH, Chen W, Zhou P, Wang Q, Jiang H. Evaluating machine learning models for sepsis prediction: A systematic review of methodologies. iScience. 2021 Dec 20;25(1):103651. doi: 10.1016/j.isci.2021.103651. PMID: 35028534; PMCID: PMC8741489.
+2. 
 
 ## Team Members
 
