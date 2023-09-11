@@ -13,7 +13,7 @@
 Sepsis is a life-threatening medical condition that requires immediate attention and action. It is a leading cause of morbidity and mortality worldwide. According to the World Health Organization (WHO), sepsis accounts for 31 million cases globally, contributing to 5.3 million deaths worldwide per year. Sepsis is characterized by dysregulated immune response to infection, which triggers a cascade of events that can lead to organ failure and death. Although our understanding of the pathophysiology has made progress during the last decades, specific and sucessful interventions are still lacking. Fluid resusciation and early administration of broad-spectrum antibiotics are the only interventions that may reduce mortality. Without timely intervention, sepsis can lead to multiple organ failure and death. Therefore, recognizing the indicators of sepsis for early detection is of paramount importance.
 
 **Project description**
-Here, we used a publicly available dataset from patients admitted to hospitals who did or did not develop sepstic shock and utilize the physiological variables  for machine learning to identify early signs of septic, contributing to effort for the early detection of this deadly condition.
+Here, we used a publicly available dataset from patients admitted to hospitals who did or did not develop sepstic shock and utilize the physiological variables  for clustering algorithms to identify subtypes of septic patients, contributing to effort towards understanding this deadly condition.
 
 ## Data
 "Prediction of Sepsis" dataset from Kaggle: https://www.kaggle.com/datasets/salikhussaini49/prediction-of-sepsis?resource=download
@@ -26,7 +26,7 @@ Data extracted from the Electronic Medical Record (EMR) underwent a series of pr
 The dataset was downloaded as .csv file and loaded into Google Colab, which contains 1,552,210 rows with 40 variables from 40,339 patients, in which 2,932 developed sepsis and 37,404 did not. Among septic patients, 426 had sepsis before ICU admission and therefore were excluded from the analysis. Exploratory data analysis shows missing values in a number of variables, and therefore value imputation was implemented (bfill and ffill) to fill the missing data. The cleaned data was then used for k-means unsupervised clustering algorithm (KMeans from sklearn.cluster) and visualized using principal component analysis (PCA from sklearn.decomposition).     
 
 ## Results
-
+We obtained 4 clusters 
 
 ## References
 1. Deng HF, Sun MW, Wang Y, Zeng J, Yuan T, Li T, Li DH, Chen W, Zhou P, Wang Q, Jiang H. Evaluating machine learning models for sepsis prediction: A systematic review of methodologies. iScience. 2021 Dec 20;25(1):103651. doi: 10.1016/j.isci.2021.103651. PMID: 35028534; PMCID: PMC8741489.
