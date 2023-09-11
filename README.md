@@ -18,13 +18,13 @@
 
 ## Background
 
-### Sepsis: A silent killer
+**Sepsis: A silent killer**
 Sepsis is a life-threatening medical condition that demands immediate attention and action. It occurs when the body's immune response to an infection goes haywire, triggering a cascade of events that can lead to organ failure and death. Understanding the importance of early detection and recognizing its indicators is critical in the battle against this deadly condition.
 
-### The Sepsis Menace: Why Detection Matters
+**The Sepsis Menace: Why Detection Matters**
 Sepsis can affect anyone, from infants to the elderly, and it doesn't discriminate based on gender, race, or socioeconomic status. It is a leading cause of morbidity and mortality worldwide, responsible for millions of deaths each year. According to the World Health Organization (WHO), sepsis accounts for up to 30 million cases globally, with over 6 million deaths annually. One of the primary reasons sepsis is so deadly is its rapid progression. It can develop within hours, catching both patients and healthcare professionals off guard. Without timely intervention, sepsis can lead to multiple organ failure and death. However, when identified and treated promptly, the chances of survival increase significantly. This is why recognizing the indicators of sepsis for early detection is of paramount importance.
 
-### Project description
+**Project description**
 Here, we used a publicly available dataset from patients admitted to hospitals who did or did not develop sepstic shock and utilize the physiological variables collected within 6-12 hours before sepsis onset for unsupervised and supervised clustering to identify early predictors of septic risk. 
 
 ## Data
