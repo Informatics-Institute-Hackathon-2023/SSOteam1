@@ -1,3 +1,3 @@
 # notebooks
 
-:exclamation: _Any jupyter notebooks can be hosted here._ :exclamation:
+:exclamation: _We use the SOSFinal file._ :exclamation:
