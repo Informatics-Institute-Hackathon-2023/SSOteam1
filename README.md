@@ -22,6 +22,8 @@ The dataset was obtained from two geographically distinct U.S. hospital systems:
 
 Data extracted from the Electronic Medical Record (EMR) underwent a series of preprocessing steps prior to formal analysis and model development. All patient features were condensed into hourly bins simplifying model development and testing, e.g., multiple heart rate measurements in an hourly time window were summarized as the median heart rate measurement. Multiple Logical Observation Identifiers Names and Codes (LOINC) codes describing the same clinical parameter were condensed into a single variable, e.g., serum hemoglobin and arterial hemoglobin became hemoglobin. 
 
+Of the time series data, we choose to use the data at 12hr as it is 12 hrs before the mean time of onset of sepsis. 
+
 ## Methods
 The dataset was downloaded as .csv file and loaded into Google Colab, which contains 1,552,210 rows with 40 variables from 40,339 patients, in which 2,932 developed sepsis and 37,404 did not. Among septic patients, 426 had sepsis before ICU admission and therefore were excluded from the analysis. Exploratory data analysis shows missing values in a number of variables, and therefore value imputation was implemented (bfill and ffill) to fill the missing data. The cleaned data was then used for k-means unsupervised clustering algorithm (KMeans from sklearn.cluster) and visualized using principal component analysis (PCA from sklearn.decomposition).     
 
